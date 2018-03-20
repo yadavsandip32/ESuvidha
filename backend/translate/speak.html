@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script>
+	</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+
+if (annyang) {
+ // Let's define a command.
+ var commands = {
+   'hello': function() { responsiveVoice.speak("टेक्स्ट-टू-स्पीच सॉफ़्टवेयर डेवलपर किट (एसडीके) आपकी वेबसाइट या एप्लिकेशन में वॉयस फीचर्स को त्वरित रूप से कार्यान्वित करने के लिए नमूना कोड की एक श्रृंखला है।", "Hindi Female"); }
+ };
+
+ // Add our commands to annyang
+ annyang.addCommands(commands);
+
+ // Start listening.
+ annyang.start();
+}
+</script>
+</body>
+</html>
